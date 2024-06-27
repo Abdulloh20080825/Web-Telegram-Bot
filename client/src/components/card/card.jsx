@@ -1,5 +1,5 @@
 import "./card.css";
-
+import Button from "../button/button";
 const Card = (props) => {
   const { course } = props;
 
@@ -28,7 +28,10 @@ const Card = (props) => {
 
       <div className="hr"></div>
 
-      <div className="btn__container"></div>
+      <div className="btn__container">
+        <Button title={"+"} type={"add"} />
+        <Button title={"-"} type={"remove"} />
+      </div>
     </div>
   );
 };
